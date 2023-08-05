@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+/* .quotebox {
+  font-family: "Satisfy", cursive;
+  margin: auto 120px auto 120px;
+  text-align: center;
+}
+
+.quotebox .author {
+  font-size: 20px;
+} */
+
+.quote-wrap {
+  width: 300px;
+  margin: 90px auto;
+  padding: 20px;
+  position: relative;
+}
+
+.quote-wrap p {
+  margin: 0;
+  padding: 0;
+}
+
+.quote-wrap .block {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.quote-style-3 {
+  width: 1000px;
+}
+
+@media only screen and (max-width: 600px) {
+  .quote-style-3 {
+    width: auto;
+  }
+}
+
+.quote-style-3 .block {
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+}
+.block:after,
+.block:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.block:after {
+  border-top-color: #ffffff;
+  border-width: 10px;
+  left: 83%;
+  margin-left: -10px;
+}
+
+
+.block:before {
+  border-top-color: rgba(0, 0, 0, 0.01);
+  border-width: 11px;
+  left: 65%;
+  margin-left: -11px;
+}
+
+.block p {
+  font-family: "Satisfy", cursive;
+  font-size: 24px;
+  color: black;
+  font-weight: 400;
+  line-height: 40px;
+  font-style: italic;
+  text-indent: 100px;
+  position: relative;
+}
+
+.block p:before {
+  content: "\201C";
+  font-family: serif;
+  font-style: normal;
+  font-weight: 700;
+  position: absolute;
+  font-size: 175px;
+  top: 0px;
+  left: -105px;
+  color: #8fdcff;
+  text-shadow: 7px 14px 10px rgba(0, 0, 0, 0.1);
+}
+.quote-attribution {
+  text-align: right;
+  padding: 20px 100px 20px 20px;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+    .quote-attribution {
+        padding: 20px 20px 20px 20px;
+      }
+  }
+
+.quote-author {
+  font-family: "Satisfy", cursive;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+}

@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  min-height: 55px;
+}
+
+.app-title {
+  font-family: "Lobster", cursive;
+  font-size: 35px;
+}
+
+.generate button {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+  font-size: 15px;
+  height: auto;
+  align-items: center;
+  background-color: #8fdcff;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  font-family: "Lobster", cursive;
+  color: white;
+  border: none;
+  border-radius: 48px;
+  padding: 6px 20px;
+  margin: 0 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .app-title{
+    font-size: 20px;
+  }
+  
+  .generate button{
+    width: auto;
+  }
+  .generate .button-text{
+    display: none;
+  }
+}
+
+.generate button:hover{
+  color: black;
+}

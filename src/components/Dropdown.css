@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+.dropdown{
+    font-family: "Lobster", cursive;
+    display: flex;
+    align-items: center;
+    background-color: #8fdcff;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    height: 30px;
+    border-radius: 48px;
+    padding: 5px 0px 5px 10px;
+}
+
+.dropdown .text{
+    padding-right: 15px;
+    color: white;
+}
+
+.dropdown .dropdown-element select{
+    font-family: "Lobster", cursive;
+    border: none;
+    border-radius: 48px;
+    padding: 12px 0px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .dropdown .text{
+        display: none;
+    }
+
+    .dropdown{
+        padding: 5px 0px 5px 0px;
+    }
+  }
