@@ -1,19 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./QuoteBox.css";
 
 const QuoteBox = (props) => {
-  return (
-    // <div className="quotebox">
-    //   <h1 className="quote">{props.quote}</h1>
-    //   <h4 className="author"> - {props.author}</h4>
-    // </div>
+  const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    setLoading(true);
+  }, [props.quote, props.author]);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timeout);
+  }, [props.quote, props.author]);
+
+  return (
     <div className="quote-wrap quote-style-3">
-      <div className="block">
-        <p>{props.quote}</p>
-      </div>
-      <div className="quote-attribution">
-        <p className="quote-author">{props.author}</p>
+      <div>
+        <div className="block">
+          {loading ? (
+            <div className="loading">Loading...</div>
+          ) : (
+            <p>{props.quote}</p>
+          )}
+        </div>
+        <div className="quote-attribution">
+          <p className="quote-author">{props.author}</p>
+        </div>
       </div>
     </div>
   );
